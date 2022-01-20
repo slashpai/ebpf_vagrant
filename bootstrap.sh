@@ -14,7 +14,7 @@ curl -OL https://dl.google.com/go/go${VERSION}.${OS}-${ARCH}.tar.gz
 sudo tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz
 rm go$VERSION.$OS-$ARCH.tar.gz
 
-echo 'PATH="$PATH:/usr/local/go/bin:'$HOME'/go/bin"' >> ~/.bashrc
+echo 'PATH="$PATH:/usr/local/go/bin:'$HOME'/go/bin"' >> ~/.bash_aliases
 
 echo "install ebpf tools and dependencies"
 sudo dnf -y install clang
